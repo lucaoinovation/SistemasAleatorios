@@ -1,0 +1,29 @@
+ ul{
+	list-style-type:none;
+	
+	font-size: 40px;
+	background-color: #87CEEB;
+
+
+	
+}
+ ul li {
+	
+	display:inline;
+        margin-bottom: 20px;
+        
+	
+}
+a:hover{
+	text-decoration:none;
+        
+}
+a{
+	color:black;
+        padding: 0px 110px;
+      
+}
+.botaoVoltar{
+    text-align: center;
+    box-sizing: border-box;
+}
