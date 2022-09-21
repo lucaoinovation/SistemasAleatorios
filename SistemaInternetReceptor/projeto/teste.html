@@ -1,0 +1,69 @@
+<?php
+$host = "localhost";
+$user = "lpz";
+$pass = "pernalonga?!";
+$banco = "cadastro";
+$connect = mysqli_connect($host, $user, $pass, $banco) or die(mysql_error());
+$sql = mysqli_query($connect, "INSERT INTO usuarios(nome, sobrenome, pais, estado, cidade, email, senha)
+?>
+<html>
+<body>
+<head>
+<table border="1">
+<tr>
+<th>Nomes</th>
+<th>Sobrenomes</th>
+<th>País</th>
+<th>Estado</th>
+<th>Cidade</th>
+<th>E-mail</th>
+<th>Senha</th>
+</tr>
+<tr>
+<td>Diego </td>
+<td>Silva</td>
+<td>Cuba</td>
+<td>Simb</td>
+<td>Mississ</td>
+<td>diego@shamps.com</td>
+<td>****</td>
+</tr>
+<tr>
+<td>Suellem</td>
+<td>Barcelos</td>
+<td>Brasil</td>
+<td>Rio de janeiro</td>
+<td>Niterói</td>
+<td>suellen@gmail.com</td>
+<td>****</td>
+</tr>
+<tr>
+<td>Ali </td>
+<td>Baba</td>
+<td>Paquistão</td>
+<td>Holly</td>
+<td>Sht</td>
+<td>ali@hotmail.com</td>
+<td>*******</td>
+</tr><td>
+</table>
+</body>
+</head>
+</html>
+<style type="text/css">
+table {
+	border-collapse:collapse;
+	border:3px solid #CCC;
+}
+
+#tabela tr {
+	border:3px solid #CCC;
+}
+
+#tabela td {
+	width:50px;
+	height:50px;
+	padding:20px;
+	border:2px solid #CCC;
+}
+</style>
