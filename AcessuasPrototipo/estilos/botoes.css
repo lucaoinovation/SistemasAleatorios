@@ -1,0 +1,135 @@
+/*linkVazio*/
+a.dropDown{
+    cursor: pointer;
+}
+
+/*linkBotão*/
+/*
+.botao{
+    transition: background 0.3s, color 0.3s;
+
+    color: gray;
+    background-image: linear-gradient(to bottom, #fff, #e0e0e0);
+}
+
+.botao:hover{
+    color: black;
+    background-image: linear-gradient(to bottom, #e0e0e0, #fff);
+}
+
+.botaoInverso{
+    transition: background 0.3s, color 0.3s;
+
+    color: gray;
+    background-image: linear-gradient(to bottom, #e0e0e0, #fff);
+}
+
+.botaoInverso:hover{
+    color: black;
+    background-image: linear-gradient(to bottom, #fff, #e0e0e0);
+}
+
+.botaoPositivo{
+    transition: background 0.3s, color 0.3s;
+
+    color: rgb(179, 179, 179);
+    background-image: linear-gradient(to bottom, #fff, #bac7e2);
+}
+
+.botaoPositivo:hover{
+    color: rgb(88, 108, 210);
+    background-image: linear-gradient(to bottom, #bac7e2, #fff);
+}
+
+.botaoNegativo{
+    transition: background 0.3s, color 0.3s;
+
+    color: gray;
+    background-image: linear-gradient(to bottom, #fff, #e2baba);
+}
+
+.botaoNegativo:hover{
+    color: #c30000;
+    background-image: linear-gradient(to bottom, #e2baba, #fff);
+}*/
+.botao:hover, .botaoInverso:hover, .botaoNegativo:hover, .botaoPositivo:hover{
+    color: black;
+    background-image: linear-gradient(to bottom, #e0e0e0, #fff);
+}
+
+.botao, .botaoInverso, .botaoNegativo, .botaoPositivo{
+    font-size: 16px;
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 3px;
+    cursor: pointer;
+    white-space: normal;
+    text-align: justify;
+    user-select: none;
+    
+    /*retirar*/
+    transition: background 0.3s, color 0.3s;
+    color: gray;
+    background-image: linear-gradient(to bottom, #fff, #e0e0e0);
+    /*retirar*/
+
+    border: solid 1px #ccc;
+    border-radius: 3px;
+    padding: 5px 10px 5px 10px;
+}
+
+.botao:disabled, .botaoInverso:disabled, .botaoPositivo:disabled, .botaoNegativo:disabled{
+    color: gray;
+    cursor: auto;
+    opacity: 0.2;
+    background-image: linear-gradient(to bottom, #696969, #2f2f2f);
+}
+
+
+/*prototipos*/
+button, input[type="submit"]{
+    font-size: 16px;
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 3px;
+    cursor: pointer;
+    white-space: normal;
+    text-align: justify;
+    user-select: none;
+    
+    /*retirar*/
+    transition: background 0.3s, color 0.3s;
+    color: gray;
+    background-image: linear-gradient(to bottom, #fff, #e0e0e0);
+    /*retirar*/
+
+    border: solid 1px #ccc;
+    border-radius: 3px;
+    padding: 5px 10px 5px 10px;
+}
+
+button:hover, input[type="submit"]:hover{
+    color: black;
+    background-image: linear-gradient(to bottom, #e0e0e0, #fff);
+}
+
+button:disabled, input[type="submit"]:disabled{
+    color: gray;
+    cursor: auto;
+    opacity: 0.2;
+    background-image: linear-gradient(to bottom, #696969, #2f2f2f);
+}
+
+button.tupla, input[type="submit"].tupla{
+    padding: 2px 6px;
+    font-size: 13px;
+    margin-bottom: 1px;
+}
+
+div.botoes{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+}

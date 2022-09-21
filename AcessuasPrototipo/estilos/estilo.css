@@ -1,0 +1,171 @@
+body{
+    margin: 0px;
+}
+
+div{
+    display: inline-block;
+    text-align: left;
+}
+
+label{
+    user-select: none;
+}
+
+fieldset{
+    min-width: auto;
+    margin-bottom: 20px;
+}
+
+form.centralizado{
+    text-align: center;
+}
+
+span{
+    display: inline-block;
+    padding: 7px 0px;
+}
+
+div.conteudo{
+    width: 80%;
+    padding: 3px 0px;
+}
+
+div.estiloBasico{
+    padding: 1%;
+    width: 97.8%;
+    background-color: #f1f1f1;
+    margin: 0.1%;
+}
+
+div.total100{
+    width: 100%;
+}
+
+div.total80{
+    width: 80%;
+    margin-left: 9%;
+    margin-right: 9%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+div.flutuanteEsquerda{
+    float: left;
+}
+
+div.flutuanteDireita{
+    float: right;
+}
+
+/*Elementos personalizados*/
+
+.noMargin{
+    margin: 0px;
+}
+
+/*mensagens de erro*/
+h1.mensagem-positiva{
+    color: #008411;
+}
+h1.mensagem-negativa{
+    color: #c30000;
+}
+h1.mensagem-neutra{
+    color: #cccccc;
+}
+
+@media screen, print{
+    p{
+        text-align: center;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    /*estilização de tabelas*/
+    table{
+        width: 100%;
+        border-spacing: 0px;
+        margin-bottom: 20px;
+    }
+
+    th{
+        background: #006300;
+        color: white;
+    }
+
+    td, th{
+        padding: 4px;
+        word-break: normal;
+        
+        transition: background 0.3s, color 0.3s;
+    }
+
+    tr.par{
+        background: #ddffe3;
+    }
+
+    tr.impar{
+        background: white;
+    }
+
+    tr.par:hover td, tr.impar:hover td{
+        background: #65af65;
+    }
+    
+    a, p{
+        text-align: justify;
+    }
+
+    h1, h2, h3, h4, h5, h6{
+        text-align: center;
+    }
+}
+
+@media only print{
+    li, div, a{
+        display: none;
+    }
+    div.conteudo{
+        display: block;
+    }
+}
+
+@media (max-width: 720px){
+    table.formGrupo div{
+        width: 100%;
+    }
+    div.conteudo{
+        width: 100%;
+        padding: 3px 0px 3px 0px;
+    }
+}
+
+/*formularios*/
+.meiaTela{
+    display: inline-block;
+    width: 49%;
+}
+table.formOficina{
+    width: 100%;
+}
+
+@media (max-width: 650px){
+    .meiaTela{
+        display: table;
+        width: 100%;
+    }
+}
+select, input[type="text"], input[type="number"], input[type="date"], textarea{
+    width: 100%;
+    outline: solid darkgray 1px;
+    outline-offset: 1px;
+    border: none;
+    padding: 0px;
+}
+
+select:focus, input[type="text"]:focus, input[type="number"]:focus, input[type="date"]:focus, textarea:focus{
+    outline: solid 1px;
+    outline-offset: 1px;
+    border: none;
+}
